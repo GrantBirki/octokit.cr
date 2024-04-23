@@ -153,7 +153,7 @@ module Octokit
       @bearer_token : String? = nil,
       @client_id : String? = nil,
       @client_secret : String? = nil,
-      &block
+      &
     )
       yield self
     end
@@ -174,7 +174,7 @@ module Octokit
       inspected
     end
 
-    def as_app(key = @client_id, secret = @client_secret, &block)
+    def as_app(key = @client_id, secret = @client_secret, &)
       if !key || !secret
         raise Error::ApplicationCredentialsRequired.new("client_id and client_secret required")
       end

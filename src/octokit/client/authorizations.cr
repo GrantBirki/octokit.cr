@@ -155,7 +155,7 @@ module Octokit
           .to_s
           .split(',')
           .map(&.strip)
-          .sort
+          .sort!
       end
 
       # Check if a token is valid.
