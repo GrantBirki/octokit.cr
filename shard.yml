@@ -5,7 +5,7 @@ authors:
   - Grant Birkinbine
   - Chris Watson <chris@watzon.me>
 
-crystal: ">= 1.0.0"
+crystal: ">= 1.12.1"
 
 license: MIT
 
@@ -19,5 +19,3 @@ development_dependencies:
   webmock:
     github: manastech/webmock.cr
     branch: master
-  hi8:
-    github: vonkingsley/hi8.cr

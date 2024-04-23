@@ -1,0 +1,9 @@
+Lint/NotNil:
+  Enabled: false
+
+Style/RedundantReturn:
+  Enabled: false
+
+Globs:
+  - "**/*.cr"
+  - "!lib"
