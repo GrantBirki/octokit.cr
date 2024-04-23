@@ -4,6 +4,8 @@ Crystal toolkit for the GitHub API.
 
 **Note:** This is in the very early stages of development. The GitHub API is expansive and there is a lot to do to get this up and running. For a list of API connections that have been completed and are still to come, see the [Roadmap](#roadmap)
 
+> This project is a maintained fork of [watzon/octokit.cr](https://github.com/watzon/octokit.cr)
+
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
