@@ -41,6 +41,22 @@ module Octokit
       def deployments(repo, **options)
         get("#{Repository.path(repo)}/deployments", options)
       end
+
+      # Create a deployment for a ref
+      # The ref parameter can be any named branch, tag, or SHA
+      # 
+      # **See Also:**
+      # - [https://developer.github.com/v3/repos/deployments/#create-a-deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)
+      #
+      # **Examples:**
+      # Create a deployment for a ref
+      #
+      # ```
+      # Octokit.create_deployment("monalisa/app", "main")   
+      # ```
+      def create_deployment(repo, ref, **options)
+        post("#{Repository.path(repo)}/deployments", options.merge(ref: ref))
+      end        
     end
   end
 end
