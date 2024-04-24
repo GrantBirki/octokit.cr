@@ -26,6 +26,21 @@ module Octokit
       def deployment(repo, deployment_id, **options)
         get("#{Repository.path(repo)}/deployments/#{deployment_id}", options)
       end
+
+      # List deployments for a repository
+      #
+      # **See Also:**
+      # - [https://developer.github.com/v3/repos/deployments/#list-deployments](https://developer.github.com/v3/repos/deployments/#list-deployments)
+      #
+      # **Examples:**
+      # List deployments for a repository
+      #
+      # ```
+      # Octokit.deployments("monalisa/app")
+      # ```
+      def deployments(repo, **options)
+        get("#{Repository.path(repo)}/deployments", options)
+      end       
     end
   end
 end
