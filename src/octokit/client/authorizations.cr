@@ -1,3 +1,5 @@
+require "../models/authorizations"
+
 module Octokit
   class Client
     # Methods for the Authorizations API

@@ -1,5 +1,5 @@
 name: octokit
-version: 0.1.0
+version: 0.2.0
 
 authors:
   - Grant Birkinbine
@@ -12,13 +12,14 @@ license: MIT
 dependencies:
   json_mapping:
     github: crystal-lang/json_mapping.cr
+    version: 0.1.1
   halite:
     github: icyleaf/halite
     version: 0.12.0
 development_dependencies:
   webmock:
     github: manastech/webmock.cr
-    branch: master
+    version: 0.14.0
 
   ameba:
     github: crystal-ameba/ameba

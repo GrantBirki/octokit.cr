@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Crystal Docs 1.11.2">
-<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_version" content="deployments-dev">
 <meta name="crystal_docs.project_name" content="octokit">
 
 
@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../js/doc.js"></script>
 
   <meta name="repository-name" content="octokit">
-  <title>Octokit::Client - octokit main</title>
+  <title>Octokit::Client - octokit deployments-dev</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../";
   </script>
@@ -45,7 +45,7 @@
       </h1>
 
       <span class="project-version">
-        main
+        deployments-dev
       </span>
     </div>
   </div>
@@ -79,6 +79,11 @@
   
   <li class=" " data-id="octokit/Octokit/Client/Authorizations" data-name="octokit::client::authorizations">
       <a href="../Octokit/Client/Authorizations.html">Authorizations</a>
+      
+    </li>
+  
+  <li class=" " data-id="octokit/Octokit/Client/Deployments" data-name="octokit::client::deployments">
+      <a href="../Octokit/Client/Deployments.html">Deployments</a>
       
     </li>
   
@@ -1797,6 +1802,11 @@
       
     </li>
   
+  <li class=" " data-id="octokit/Octokit/Models/Users" data-name="octokit::models::users">
+      <a href="../Octokit/Models/Users.html">Users</a>
+      
+    </li>
+  
   <li class=" " data-id="octokit/Octokit/Models/UserSearchResult" data-name="octokit::models::usersearchresult">
       <a href="../Octokit/Models/UserSearchResult.html">UserSearchResult</a>
       
@@ -1947,11 +1957,11 @@ Configuration options for <code><a href="../Octokit/Client.html">Client</a></cod
 environment variables.</p>
 <p><strong>Examples:</strong></p>
 <p>With standard auth:</p>
-<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;watzon&quot;</span>, <span class="s">&quot;PASSWORD&quot;</span>)</code></pre>
+<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;monalisa&quot;</span>, <span class="s">&quot;PASSWORD&quot;</span>)</code></pre>
 <p>With access token:</p>
-<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;watzon&quot;</span>, access_token: <span class="s">&quot;ACCESS_TOKEN&quot;</span>)</code></pre>
+<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;monalisa&quot;</span>, access_token: <span class="s">&quot;ACCESS_TOKEN&quot;</span>)</code></pre>
 <p>With bearer token:</p>
-<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;watzon&quot;</span>, bearer_token: <span class="s">&quot;BEARER_TOKEN&quot;</span>)</code></pre>
+<pre><code class="language-crystal">@client <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;monalisa&quot;</span>, bearer_token: <span class="s">&quot;BEARER_TOKEN&quot;</span>)</code></pre>
 
 
 
@@ -1970,6 +1980,8 @@ environment variables.</p>
       <li class="other-type"><a href="../Octokit/Authentication.html">Octokit::Authentication</a></li>
     
       <li class="other-type"><a href="../Octokit/Client/Authorizations.html">Octokit::Client::Authorizations</a></li>
+    
+      <li class="other-type"><a href="../Octokit/Client/Deployments.html">Octokit::Client::Deployments</a></li>
     
       <li class="other-type"><a href="../Octokit/Client/Issues.html">Octokit::Client::Issues</a></li>
     
@@ -2022,93 +2034,72 @@ environment variables.</p>
   </h2>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L103" target="_blank">
-        octokit/client.cr
-      </a>
+      octokit/client.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/authorizations.cr#L2" target="_blank">
-        octokit/client/authorizations.cr
-      </a>
+      octokit/client/authorizations.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/issues.cr#L2" target="_blank">
-        octokit/client/issues.cr
-      </a>
+      octokit/client/deployments.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/markdown.cr#L2" target="_blank">
-        octokit/client/markdown.cr
-      </a>
+      octokit/client/issues.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/organizations.cr#L2" target="_blank">
-        octokit/client/organizations.cr
-      </a>
+      octokit/client/markdown.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/pub_sub_hubbub.cr#L4" target="_blank">
-        octokit/client/pub_sub_hubbub.cr
-      </a>
+      octokit/client/organizations.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/rate_limit.cr#L2" target="_blank">
-        octokit/client/rate_limit.cr
-      </a>
+      octokit/client/pub_sub_hubbub.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/releases.cr#L4" target="_blank">
-        octokit/client/releases.cr
-      </a>
+      octokit/client/rate_limit.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/repositories.cr#L2" target="_blank">
-        octokit/client/repositories.cr
-      </a>
+      octokit/client/releases.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/say.cr#L2" target="_blank">
-        octokit/client/say.cr
-      </a>
+      octokit/client/repositories.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/search.cr#L2" target="_blank">
-        octokit/client/search.cr
-      </a>
+      octokit/client/say.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/statuses.cr#L2" target="_blank">
-        octokit/client/statuses.cr
-      </a>
+      octokit/client/search.cr
     
     <br/>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client/users.cr#L2" target="_blank">
-        octokit/client/users.cr
-      </a>
+      octokit/client/statuses.cr
+    
+    <br/>
+  
+    
+      octokit/client/users.cr
     
     <br/>
   
@@ -2252,6 +2243,68 @@ environment variables.</p>
 
 
 <div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../Octokit/Client/Deployments.html">Octokit::Client::Deployments</a></code></h3>
+  
+  
+    <a href="../Octokit/Client/Deployments.html#create_deployment%28repo%3AString%2Cref%3AString%2Ctask%3AString%3D%22deploy%22%2Cauto_merge%3ABool%3Dtrue%2Crequired_contexts%3AArray%28String%29%7CNil%3Dnil%2Cpayload%3AHash%28String%2CString%29%3D%7B%7DofString%3D%3EString%2Cenvironment%3AString%3D%22production%22%2Cdescription%3AString%3D%22%22%2Ctransient_environment%3ABool%3Dfalse%2Cproduction_environment%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>create_deployment(repo : String, ref : String, task : String = <span class="s">&quot;deploy&quot;</span>, auto_merge : Bool = <span class="n">true</span>, required_contexts : Array(String) | Nil = <span class="n">nil</span>, payload : Hash(String, String) = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, environment : String = <span class="s">&quot;production&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, transient_environment : Bool = <span class="n">false</span>, production_environment : Bool = <span class="n">true</span>, **options)</span>
+    create_deployment</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#create_deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstate%3AString%2Ctarget_url%3AString%3D%22%22%2Clog_url%3AString%3D%22%22%2Cdescription%3AString%3D%22%22%2Cenvironment%3AString%7CNil%3Dnil%2Cenvironment_url%3AString%3D%22%22%2Cauto_inactive%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>create_deployment_status(repo : String, deployment_id : Int64, state : String, target_url : String = <span class="s">&quot;&quot;</span>, log_url : String = <span class="s">&quot;&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, environment : String | Nil = <span class="n">nil</span>, environment_url : String = <span class="s">&quot;&quot;</span>, auto_inactive : Bool = <span class="n">true</span>, **options)</span>
+    create_deployment_status</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#delete_deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>delete_deployment(repo : String, deployment_id : Int64, **options)</span>
+    delete_deployment</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>deployment(repo : String, deployment_id : Int64, **options)</span>
+    deployment</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstatus_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>deployment_status(repo : String, deployment_id : Int64, status_id : Int64, **options)</span>
+    deployment_status</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method" class="tooltip">
+      <span>deployment_statuses(repo : String, deployment_id : Int64, **options) : Paginator(Octokit::Models::DeploymentStatus)</span>
+    deployment_statuses</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>deployments(repo : String, **options)</span>
+    deployments</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#list_deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method" class="tooltip">
+      <span>list_deployment_statuses(repo : String, deployment_id : Int64, **options) : Paginator(Octokit::Models::DeploymentStatus)</span>
+    list_deployment_statuses</a>, 
+    
+  
+    <a href="../Octokit/Client/Deployments.html#list_deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method" class="tooltip">
+      <span>list_deployments(repo : String, **options)</span>
+    list_deployments</a>
+    
+  
+
+
+    
+
+
+    
+
+
+    
+
+
   
     
 
@@ -3544,14 +3597,12 @@ environment variables.</p>
           
           <p>Create a new Client instance.</p>
 <p><strong>Example:</strong></p>
-<pre><code class="language-crystal">cli <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;watzon&quot;</span>, <span class="s">&quot;MY_PASSWORD&quot;</span>)
+<pre><code class="language-crystal">cli <span class="o">=</span> <span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;monalisa&quot;</span>, <span class="s">&quot;MY_PASSWORD&quot;</span>)
 pp cli.user <span class="c"># Show information about the logged in user</span></code></pre>
         </div>
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3568,15 +3619,13 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
           
           <p>Create a new Client instance yielding a block.</p>
 <p><strong>Example:</strong></p>
-<pre><code class="language-crystal"><span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;watzon&quot;</span>, <span class="s">&quot;MY_PASSWORD&quot;</span>) <span class="k">do</span> <span class="o">|</span>cli<span class="o">|</span>
+<pre><code class="language-crystal"><span class="t">Octokit</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;monalisa&quot;</span>, <span class="s">&quot;MY_PASSWORD&quot;</span>) <span class="k">do</span> <span class="o">|</span>cli<span class="o">|</span>
   pp cli.user <span class="c"># Show information about the logged in user</span>
 <span class="k">end</span></code></pre>
         </div>
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L149" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3613,8 +3662,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L203" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3628,8 +3675,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L177" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3650,8 +3695,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L209" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3670,8 +3713,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L215" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3692,8 +3733,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L221" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3707,8 +3746,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L238" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3724,8 +3761,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L226" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3739,8 +3774,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L232" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -3761,8 +3794,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L162" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3782,8 +3813,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L191" target="_blank">View source</a>]
-        
       </div>
     </div>
   
@@ -3802,8 +3831,6 @@ pp cli.user <span class="c"># Show information about the logged in user</span></
       
       <br/>
       <div>
-        
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/870207c1b1b47e3495588626b015221fb74c3685/src/octokit/client.cr#L197" target="_blank">View source</a>]
         
       </div>
     </div>
