@@ -1,3 +1,5 @@
+require "../models/repos"
+
 module Octokit
   class Client
     # Methods for the Deployments API

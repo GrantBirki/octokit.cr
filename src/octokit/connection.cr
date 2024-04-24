@@ -1,6 +1,7 @@
 require "base64"
 require "halite"
 require "./authentication"
+require "./macros"
 
 module Octokit
   module Connection

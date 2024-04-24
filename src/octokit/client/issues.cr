@@ -1,3 +1,8 @@
+require "../models/repos"
+require "../models/orgs"
+require "../models/issues"
+require "../models/users"
+
 module Octokit
   class Client
     # Methods for the Issues API
