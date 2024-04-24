@@ -5,6 +5,8 @@ module Octokit
   class Client
     # Methods for the Deployments API
     #
+    # All "repo" params are constructed in the format of `<organization>/<repository>`
+    #
     # **See Also:**
     # - [https://developer.github.com/v3/repos/commits/deployments/](https://developer.github.com/v3/repos/commits/deployments/)
 
@@ -117,6 +119,20 @@ module Octokit
       # ```
       def delete_deployment(repo : String, deployment_id : Int64, **options)
         delete("#{Repository.path(repo)}/deployments/#{deployment_id}", options)
+      end
+
+      # Get a deployment status
+      #
+      # **See Also:**
+      # - [https://developer.github.com/v3/repos/deployments/#get-a-deployment-status](https://developer.github.com/v3/repos/deployments/#get-a-deployment-status)
+      #
+      # **Examples:**
+      #
+      # ```
+      # Octokit.deployment_status("monalisa/app", 1234567890, 1234567890)
+      # ```
+      def deployment_status(repo : String, deployment_id : Int64, status_id : Int64, **options)
+        get("#{Repository.path(repo)}/deployments/#{deployment_id}/statuses/#{status_id}", options)
       end
 
       # List all statuses for a Deployment
