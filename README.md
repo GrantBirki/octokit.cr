@@ -1,6 +1,6 @@
 # octokit
 
-[![test](https://github.com/GrantBirki/octokit.cr/actions/workflows/test.yml/badge.svg)](https://github.com/GrantBirki/octokit.cr/actions/workflows/test.yml) [![lint](https://github.com/GrantBirki/octokit.cr/actions/workflows/lint.yml/badge.svg)](https://github.com/GrantBirki/octokit.cr/actions/workflows/lint.yml)
+[![test](https://github.com/GrantBirki/octokit.cr/actions/workflows/test.yml/badge.svg)](https://github.com/GrantBirki/octokit.cr/actions/workflows/test.yml) [![lint](https://github.com/GrantBirki/octokit.cr/actions/workflows/lint.yml/badge.svg)](https://github.com/GrantBirki/octokit.cr/actions/workflows/lint.yml) [![acceptance](https://github.com/GrantBirki/octokit.cr/actions/workflows/acceptance.yml/badge.svg)](https://github.com/GrantBirki/octokit.cr/actions/workflows/acceptance.yml)
 
 Crystal toolkit for the GitHub API.
 
