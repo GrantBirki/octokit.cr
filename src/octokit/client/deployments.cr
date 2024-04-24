@@ -40,7 +40,7 @@ module Octokit
       # ```
       def deployments(repo, **options)
         get("#{Repository.path(repo)}/deployments", options)
-      end       
+      end
     end
   end
 end
