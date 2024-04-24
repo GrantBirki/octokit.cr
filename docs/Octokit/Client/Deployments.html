@@ -1951,7 +1951,7 @@
   </h2>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L11" target="_blank">
+      <a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L13" target="_blank">
         octokit/client/deployments.cr
       </a>
     
@@ -2003,6 +2003,13 @@
         <a href="#deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployment</strong>(repo : String, deployment_id : Int64, **options)</a>
         
           <div class="summary"><p>Fetch a single deployment for a repository</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstatus_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployment_status</strong>(repo : String, deployment_id : Int64, status_id : Int64, **options)</a>
+        
+          <div class="summary"><p>Get a deployment status</p></div>
         
       </li>
     
@@ -2083,7 +2090,7 @@ Create a deployment for a ref</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L72" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L74" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2116,7 +2123,7 @@ Create a deployment for a ref</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L176" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L192" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2147,7 +2154,7 @@ Mark the active deployment as inactive by adding any non-successful deployment s
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L118" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L120" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2175,7 +2182,34 @@ Mark the active deployment as inactive by adding any non-successful deployment s
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L30" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="deployment_status(repo:String,deployment_id:Int64,status_id:Int64,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>deployment_status</strong>(repo : String, deployment_id : Int64, status_id : Int64, **options)
+
+        <a class="method-permalink" href="#deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstatus_id%3AInt64%2C%2A%2Aoptions%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get a deployment status</p>
+<p><strong>See Also:</strong></p>
+<ul>
+<li><a href="https://developer.github.com/v3/repos/deployments/#get-a-deployment-status">https://developer.github.com/v3/repos/deployments/#get-a-deployment-status</a></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.deployment_status(<span class="s">&quot;monalisa/app&quot;</span>, <span class="n">1234567890</span>, <span class="n">1234567890</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L134" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2210,7 +2244,7 @@ puts data.records.to_pretty_json</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L145" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L161" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2239,7 +2273,7 @@ List deployments for a repository</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L47" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L49" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2260,7 +2294,7 @@ List deployments for a repository</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L155" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L171" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -2281,7 +2315,7 @@ List deployments for a repository</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L52" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/04bb330241d749429e50b2320c7a9c611e4d7614/src/octokit/client/deployments.cr#L54" target="_blank">View source</a>]
         
       </div>
     </div>
