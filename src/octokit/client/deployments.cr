@@ -23,7 +23,7 @@ module Octokit
       # ```
       # Octokit.deployment("monsalisa/app", 123456)
       # ```
-      def deployment(repo, deployment_id, **options)
+      def deployment(repo : String, deployment_id : Int32, **options)
         get("#{Repository.path(repo)}/deployments/#{deployment_id}", options)
       end
 
@@ -40,12 +40,12 @@ module Octokit
       # ```
       #
       # An alias method exists for `deployments` called `list_deployments` which can be used interchangeably
-      def deployments(repo, **options)
+      def deployments(repo : String, **options)
         get("#{Repository.path(repo)}/deployments", options)
       end
 
       # Alias for `deployments`
-      def list_deployments(repo, **options)
+      def list_deployments(repo : String, **options)
         deployments(repo, **options)
       end
 
@@ -61,7 +61,7 @@ module Octokit
       # ```
       # Octokit.create_deployment("monalisa/app", "main")
       # ```
-      def create_deployment(repo, ref, **options)
+      def create_deployment(repo : String, ref : String, **options)
         post("#{Repository.path(repo)}/deployments", options.merge(ref: ref))
       end
 
@@ -81,7 +81,7 @@ module Octokit
       # ```
       # Octokit.delete_deployment("monalisa/app", 123456)
       # ```
-      def delete_deployment(repo, deployment_id, **options)
+      def delete_deployment(repo : String, deployment_id : Int32, **options)
         delete("#{Repository.path(repo)}/deployments/#{deployment_id}", options)
       end
     end
