@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../js/doc.js"></script>
 
   <meta name="repository-name" content="octokit">
-  <title>Octokit::Models::Activity - octokit deployments</title>
+  <title>Octokit::Models::Users - octokit deployments</title>
   <script type="text/javascript">
     CrystalDocs.base_path = "../../";
   </script>
@@ -357,7 +357,7 @@
       
     </li>
   
-  <li class="parent open current" data-id="octokit/Octokit/Models/Activity" data-name="octokit::models::activity">
+  <li class="parent " data-id="octokit/Octokit/Models/Activity" data-name="octokit::models::activity">
       <a href="../../Octokit/Models/Activity.html">Activity</a>
       
         <ul>
@@ -1802,7 +1802,7 @@
       
     </li>
   
-  <li class=" " data-id="octokit/Octokit/Models/Users" data-name="octokit::models::users">
+  <li class=" current" data-id="octokit/Octokit/Models/Users" data-name="octokit::models::users">
       <a href="../../Octokit/Models/Users.html">Users</a>
       
     </li>
@@ -1906,17 +1906,25 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">struct</span> Octokit::<wbr>Models::<wbr>Activity
+  <span class="kind">alias</span> Octokit::<wbr>Models::<wbr>Users
 
 </h1>
 
 
-  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Octokit/Models/Activity.html">Octokit::Models::Activity</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
 
 
 
 
 
+  <h2>
+    <a id="alias-definition" class="anchor" href="#alias-definition">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Alias Definition
+  </h2>
+  <code><a href="../../Octokit/Models/User.html">Octokit::Models::User</a></code>
 
 
 
@@ -1939,8 +1947,8 @@
   </h2>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/83b706b72b5637fb83171e6ae9f33cd9c38c5f5a/src/octokit/models/activity.cr#L5" target="_blank">
-        octokit/models/activity.cr
+      <a href="https://github.com/GrantBirki/octokit.cr/blob/83b706b72b5637fb83171e6ae9f33cd9c38c5f5a/src/octokit/models/repo_statuses.cr#L6" target="_blank">
+        octokit/models/repo_statuses.cr
       </a>
     
     <br/>
@@ -1950,430 +1958,24 @@
 
 
 
-  <h2>
-    <a id="constructors" class="anchor" href="#constructors">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Constructors
-  </h2>
-  <ul class="list-summary">
-    
-      <li class="entry-summary">
-        <a href="#new%28timeline_url%3AString%2Cuser_url%3AString%2Ccurrent_user_public_url%3AString%2Ccurrent_user_url%3AString%2Ccurrent_user_actor_url%3AString%2Ccurrent_user_organization_url%3AString%2Ccurrent_user_organization_urls%3AArray%28String%29%29-class-method" class="signature"><strong>.new</strong>(timeline_url : String, user_url : String, current_user_public_url : String, current_user_url : String, current_user_actor_url : String, current_user_organization_url : String, current_user_organization_urls : Array(String))</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#new%28__temp_86%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_86 : JSON::PullParser)</a>
-        
-      </li>
-    
-  </ul>
 
 
 
 
 
-
-
-  <h2>
-    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Instance Method Summary
-  </h2>
-  <ul class="list-summary">
-    
-      <li class="entry-summary">
-        <a href="#current_user_actor_url%3AString-instance-method" class="signature"><strong>#current_user_actor_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_actor_url%3D%28_current_user_actor_url%3AString%29-instance-method" class="signature"><strong>#current_user_actor_url=</strong>(_current_user_actor_url : String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_organization_url%3AString-instance-method" class="signature"><strong>#current_user_organization_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_organization_url%3D%28_current_user_organization_url%3AString%29-instance-method" class="signature"><strong>#current_user_organization_url=</strong>(_current_user_organization_url : String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_organization_urls%3AArray%28String%29-instance-method" class="signature"><strong>#current_user_organization_urls</strong> : Array(String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_organization_urls%3D%28_current_user_organization_urls%3AArray%28String%29%29-instance-method" class="signature"><strong>#current_user_organization_urls=</strong>(_current_user_organization_urls : Array(String))</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_public_url%3AString-instance-method" class="signature"><strong>#current_user_public_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_public_url%3D%28_current_user_public_url%3AString%29-instance-method" class="signature"><strong>#current_user_public_url=</strong>(_current_user_public_url : String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_url%3AString-instance-method" class="signature"><strong>#current_user_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#current_user_url%3D%28_current_user_url%3AString%29-instance-method" class="signature"><strong>#current_user_url=</strong>(_current_user_url : String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#timeline_url%3AString-instance-method" class="signature"><strong>#timeline_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#timeline_url%3D%28_timeline_url%3AString%29-instance-method" class="signature"><strong>#timeline_url=</strong>(_timeline_url : String)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#user_url%3AString-instance-method" class="signature"><strong>#user_url</strong> : String</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#user_url%3D%28_user_url%3AString%29-instance-method" class="signature"><strong>#user_url=</strong>(_user_url : String)</a>
-        
-      </li>
-    
-  </ul>
 
 
 
 <div class="methods-inherited">
-  
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-  
-    
-
-
-    
-
-
-    
-
-
-    
-
-
   
 </div>
 
 
-  <h2>
-    <a id="constructor-detail" class="anchor" href="#constructor-detail">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Constructor Detail
-  </h2>
-  
-    <div class="entry-detail" id="new(timeline_url:String,user_url:String,current_user_public_url:String,current_user_url:String,current_user_actor_url:String,current_user_organization_url:String,current_user_organization_urls:Array(String))-class-method">
-      <div class="signature">
-        
-        def self.<strong>new</strong>(timeline_url : String, user_url : String, current_user_public_url : String, current_user_url : String, current_user_actor_url : String, current_user_organization_url : String, current_user_organization_urls : Array(String))
-
-        <a class="method-permalink" href="#new%28timeline_url%3AString%2Cuser_url%3AString%2Ccurrent_user_public_url%3AString%2Ccurrent_user_url%3AString%2Ccurrent_user_actor_url%3AString%2Ccurrent_user_organization_url%3AString%2Ccurrent_user_organization_urls%3AArray%28String%29%29-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="new(__temp_86:JSON::PullParser)-class-method">
-      <div class="signature">
-        
-        def self.<strong>new</strong>(__temp_86 : JSON::PullParser)
-
-        <a class="method-permalink" href="#new%28__temp_86%3AJSON%3A%3APullParser%29-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
 
 
 
 
 
-
-
-  <h2>
-    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Instance Method Detail
-  </h2>
-  
-    <div class="entry-detail" id="current_user_actor_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_actor_url</strong> : String
-
-        <a class="method-permalink" href="#current_user_actor_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_actor_url=(_current_user_actor_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_actor_url=</strong>(_current_user_actor_url : String)
-
-        <a class="method-permalink" href="#current_user_actor_url%3D%28_current_user_actor_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_organization_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_organization_url</strong> : String
-
-        <a class="method-permalink" href="#current_user_organization_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_organization_url=(_current_user_organization_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_organization_url=</strong>(_current_user_organization_url : String)
-
-        <a class="method-permalink" href="#current_user_organization_url%3D%28_current_user_organization_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_organization_urls:Array(String)-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_organization_urls</strong> : Array(String)
-
-        <a class="method-permalink" href="#current_user_organization_urls%3AArray%28String%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_organization_urls=(_current_user_organization_urls:Array(String))-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_organization_urls=</strong>(_current_user_organization_urls : Array(String))
-
-        <a class="method-permalink" href="#current_user_organization_urls%3D%28_current_user_organization_urls%3AArray%28String%29%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_public_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_public_url</strong> : String
-
-        <a class="method-permalink" href="#current_user_public_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_public_url=(_current_user_public_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_public_url=</strong>(_current_user_public_url : String)
-
-        <a class="method-permalink" href="#current_user_public_url%3D%28_current_user_public_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_url</strong> : String
-
-        <a class="method-permalink" href="#current_user_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="current_user_url=(_current_user_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>current_user_url=</strong>(_current_user_url : String)
-
-        <a class="method-permalink" href="#current_user_url%3D%28_current_user_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="timeline_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>timeline_url</strong> : String
-
-        <a class="method-permalink" href="#timeline_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="timeline_url=(_timeline_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>timeline_url=</strong>(_timeline_url : String)
-
-        <a class="method-permalink" href="#timeline_url%3D%28_timeline_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
-      <div class="signature">
-        
-        def <strong>to_json</strong>(json : JSON::Builder)
-
-        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="user_url:String-instance-method">
-      <div class="signature">
-        
-        def <strong>user_url</strong> : String
-
-        <a class="method-permalink" href="#user_url%3AString-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="user_url=(_user_url:String)-instance-method">
-      <div class="signature">
-        
-        def <strong>user_url=</strong>(_user_url : String)
-
-        <a class="method-permalink" href="#user_url%3D%28_user_url%3AString%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-      </div>
-    </div>
-  
 
 
 </div>
