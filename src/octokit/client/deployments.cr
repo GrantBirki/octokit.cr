@@ -38,13 +38,20 @@ module Octokit
       # ```
       # Octokit.deployments("monalisa/app")
       # ```
+      #
+      # An alias method exists for `deployments` called `list_deployments` which can be used interchangeably
       def deployments(repo, **options)
         get("#{Repository.path(repo)}/deployments", options)
       end
 
+      # Alias for `deployments`
+      def list_deployments(repo, **options)
+        deployments(repo, **options)
+      end
+
       # Create a deployment for a ref
       # The ref parameter can be any named branch, tag, or SHA
-      # 
+      #
       # **See Also:**
       # - [https://developer.github.com/v3/repos/deployments/#create-a-deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)
       #
@@ -52,11 +59,11 @@ module Octokit
       # Create a deployment for a ref
       #
       # ```
-      # Octokit.create_deployment("monalisa/app", "main")   
+      # Octokit.create_deployment("monalisa/app", "main")
       # ```
       def create_deployment(repo, ref, **options)
         post("#{Repository.path(repo)}/deployments", options.merge(ref: ref))
-      end        
+      end
     end
   end
 end
