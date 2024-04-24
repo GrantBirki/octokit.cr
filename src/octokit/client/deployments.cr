@@ -117,6 +117,11 @@ module Octokit
           per_page: options[:per_page]?
         )
       end
+
+      # alias for `deployment_statuses`
+      def list_deployment_statuses(deployment_url : String, **options) : Paginator(Octokit::Models::DeploymentStatus)
+        deployment_statuses(deployment_url, **options)
+      end
     end
   end
 end
