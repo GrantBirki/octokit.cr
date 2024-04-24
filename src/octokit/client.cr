@@ -118,6 +118,7 @@ module Octokit
     include Octokit::Client::Search
     include Octokit::Client::Statuses
     include Octokit::Client::Say
+    include Octokit::Client::Deployments
 
     CONVENIENCE_HEADERS = Set{"accept", "content_type"}
 
