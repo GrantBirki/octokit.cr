@@ -19,7 +19,7 @@ module Octokit
       #
       # **Example:**
       # ```
-      # @client = Octokit.client("watzon", "PASSWORD")
+      # @client = Octokit.client("monalisa", "PASSWORD")
       # @client.authorizations
       # ```
       def authorizations(**options) : Connection::Paginator(Authorization)
@@ -36,7 +36,7 @@ module Octokit
       #
       # **Example:**
       # ```
-      # @client = Octokit.client("watzon", "PASSWORD")
+      # @client = Octokit.client("monalisa", "PASSWORD")
       # @client.authorization(999999)
       # ```
       def authorizations(number : Int32) : Authorization
@@ -56,7 +56,7 @@ module Octokit
       #
       # **Example:**
       # ```
-      # @client = Octokit.client("watzon", "PASSWORD")
+      # @client = Octokit.client("monalisa", "PASSWORD")
       # @client.create_authorization(idempotent: true, client_id: "xxxx", client_secret: "yyyy", scopes: ["user"])
       # ```
       def create_authorization(
@@ -113,7 +113,7 @@ module Octokit
       #
       # **Example:**
       # ```
-      # @client = Octokit.client("watzon", "PASSWORD")
+      # @client = Octokit.client("monalisa", "PASSWORD")
       # @client.update_authorization(999999, add_scopes: ["gist", "repo"], note: "Why not Zoidberg possibly?")
       # ```
       def update_authorization(number : Int32, **options) : Authorization
@@ -132,7 +132,7 @@ module Octokit
       #
       # **Example:**
       # ```
-      # @client = Octokit.client("watzon", "PASSWORD")
+      # @client = Octokit.client("monalisa", "PASSWORD")
       # @client.delete_authorization(999999)
       # ```
       def delete_authorization(number : Int32) : Bool
