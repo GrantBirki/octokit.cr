@@ -1,6 +1,5 @@
 require "../models/repos"
 require "../models/repo_deployments"
-require "halite"
 
 module Octokit
   class Client
@@ -160,7 +159,7 @@ module Octokit
       # Create a deployment status for a Deployment
       #
       # :param repo [String]: The repository to create a deployment status for in org/repo format (required)
-      # :param deployment_id [Integer]: The deployment id (required) 
+      # :param deployment_id [Integer]: The deployment id (required)
       # :param state: can be one of the following: error, failure, inactive, in_progress, queued, pending, success
       # :param options [String]: :target_url The target URL to associate with this status. Default: ""
       # :param options [String]: :description A short description of the status. Maximum length of 140 characters. Default: ""
@@ -175,9 +174,9 @@ module Octokit
       # Octokit.create_deployment_status("monalisa/app", 1234567890, "success")
       # ```
       def create_deployment_status(
-        repo : String, # in org/repo format (required)
+        repo : String,         # in org/repo format (required)
         deployment_id : Int64, # The deployment id (required)
-        state : String,          # The state of the status (required)
+        state : String,        # The state of the status (required)
         target_url : String = "",
         log_url : String = "",
         description : String = "",
