@@ -1951,7 +1951,7 @@
   </h2>
   
     
-      <a href="https://github.com/GrantBirki/octokit.cr/blob/83b706b72b5637fb83171e6ae9f33cd9c38c5f5a/src/octokit/client/deployments.cr#L10" target="_blank">
+      <a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L11" target="_blank">
         octokit/client/deployments.cr
       </a>
     
@@ -1979,16 +1979,58 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#deployment%28repo%2Cdeployment_id%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployment</strong>(repo, deployment_id, **options)</a>
+        <a href="#create_deployment%28repo%3AString%2Cref%3AString%2Ctask%3AString%3D%22deploy%22%2Cauto_merge%3ABool%3Dtrue%2Crequired_contexts%3AArray%28String%29%7CNil%3Dnil%2Cpayload%3AHash%28String%2CString%29%3D%7B%7DofString%3D%3EString%2Cenvironment%3AString%3D%22production%22%2Cdescription%3AString%3D%22%22%2Ctransient_environment%3ABool%3Dfalse%2Cproduction_environment%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#create_deployment</strong>(repo : String, ref : String, task : String = <span class="s">&quot;deploy&quot;</span>, auto_merge : Bool = <span class="n">true</span>, required_contexts : Array(String) | Nil = <span class="n">nil</span>, payload : Hash(String, String) = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, environment : String = <span class="s">&quot;production&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, transient_environment : Bool = <span class="n">false</span>, production_environment : Bool = <span class="n">true</span>, **options)</a>
+        
+          <div class="summary"><p>Create a deployment for a ref The ref parameter can be any named branch, tag, or SHA</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#create_deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstate%3AString%2Ctarget_url%3AString%3D%22%22%2Clog_url%3AString%3D%22%22%2Cdescription%3AString%3D%22%22%2Cenvironment%3AString%7CNil%3Dnil%2Cenvironment_url%3AString%3D%22%22%2Cauto_inactive%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#create_deployment_status</strong>(repo : String, deployment_id : Int64, state : String, target_url : String = <span class="s">&quot;&quot;</span>, log_url : String = <span class="s">&quot;&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, environment : String | Nil = <span class="n">nil</span>, environment_url : String = <span class="s">&quot;&quot;</span>, auto_inactive : Bool = <span class="n">true</span>, **options)</a>
+        
+          <div class="summary"><p>Create a deployment status for a Deployment</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete_deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#delete_deployment</strong>(repo : String, deployment_id : Int64, **options)</a>
+        
+          <div class="summary"><p>Delete a Deployment</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployment</strong>(repo : String, deployment_id : Int64, **options)</a>
         
           <div class="summary"><p>Fetch a single deployment for a repository</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#deployments%28repo%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployments</strong>(repo, **options)</a>
+        <a href="#deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method" class="signature"><strong>#deployment_statuses</strong>(repo : String, deployment_id : Int64, **options) : Paginator(Octokit::Models::DeploymentStatus)</a>
+        
+          <div class="summary"><p>List all statuses for a Deployment</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#deployments</strong>(repo : String, **options)</a>
         
           <div class="summary"><p>List deployments for a repository</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#list_deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method" class="signature"><strong>#list_deployment_statuses</strong>(repo : String, deployment_id : Int64, **options) : Paginator(Octokit::Models::DeploymentStatus)</a>
+        
+          <div class="summary"><p>alias for <code><a href="../../Octokit/Client/Deployments.html#deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method">#deployment_statuses</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#list_deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method" class="signature"><strong>#list_deployments</strong>(repo : String, **options)</a>
+        
+          <div class="summary"><p>Alias for <code><a href="../../Octokit/Client/Deployments.html#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#deployments</a></code></p></div>
         
       </li>
     
@@ -2016,12 +2058,106 @@
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="deployment(repo,deployment_id,**options)-instance-method">
+    <div class="entry-detail" id="create_deployment(repo:String,ref:String,task:String=&quot;deploy&quot;,auto_merge:Bool=true,required_contexts:Array(String)|Nil=nil,payload:Hash(String,String)={}ofString=&gt;String,environment:String=&quot;production&quot;,description:String=&quot;&quot;,transient_environment:Bool=false,production_environment:Bool=true,**options)-instance-method">
       <div class="signature">
         
-        def <strong>deployment</strong>(repo, deployment_id, **options)
+        def <strong>create_deployment</strong>(repo : String, ref : String, task : String = <span class="s">&quot;deploy&quot;</span>, auto_merge : Bool = <span class="n">true</span>, required_contexts : Array(String) | Nil = <span class="n">nil</span>, payload : Hash(String, String) = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, environment : String = <span class="s">&quot;production&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, transient_environment : Bool = <span class="n">false</span>, production_environment : Bool = <span class="n">true</span>, **options)
 
-        <a class="method-permalink" href="#deployment%28repo%2Cdeployment_id%2C%2A%2Aoptions%29-instance-method">#</a>
+        <a class="method-permalink" href="#create_deployment%28repo%3AString%2Cref%3AString%2Ctask%3AString%3D%22deploy%22%2Cauto_merge%3ABool%3Dtrue%2Crequired_contexts%3AArray%28String%29%7CNil%3Dnil%2Cpayload%3AHash%28String%2CString%29%3D%7B%7DofString%3D%3EString%2Cenvironment%3AString%3D%22production%22%2Cdescription%3AString%3D%22%22%2Ctransient_environment%3ABool%3Dfalse%2Cproduction_environment%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Create a deployment for a ref
+The ref parameter can be any named branch, tag, or SHA</p>
+<p><strong>See Also:</strong></p>
+<ul>
+<li><a href="https://developer.github.com/v3/repos/deployments/#create-a-deployment">https://developer.github.com/v3/repos/deployments/#create-a-deployment</a></li>
+</ul>
+<p><strong>Examples:</strong>
+Create a deployment for a ref</p>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.create_deployment(<span class="s">&quot;monalisa/app&quot;</span>, <span class="s">&quot;main&quot;</span>)</code></pre>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.create_deployment(<span class="s">&quot;monalisa/app&quot;</span>, <span class="s">&quot;main&quot;</span>, description: <span class="s">&quot;Deploying main branch!&quot;</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="create_deployment_status(repo:String,deployment_id:Int64,state:String,target_url:String=&quot;&quot;,log_url:String=&quot;&quot;,description:String=&quot;&quot;,environment:String|Nil=nil,environment_url:String=&quot;&quot;,auto_inactive:Bool=true,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>create_deployment_status</strong>(repo : String, deployment_id : Int64, state : String, target_url : String = <span class="s">&quot;&quot;</span>, log_url : String = <span class="s">&quot;&quot;</span>, description : String = <span class="s">&quot;&quot;</span>, environment : String | Nil = <span class="n">nil</span>, environment_url : String = <span class="s">&quot;&quot;</span>, auto_inactive : Bool = <span class="n">true</span>, **options)
+
+        <a class="method-permalink" href="#create_deployment_status%28repo%3AString%2Cdeployment_id%3AInt64%2Cstate%3AString%2Ctarget_url%3AString%3D%22%22%2Clog_url%3AString%3D%22%22%2Cdescription%3AString%3D%22%22%2Cenvironment%3AString%7CNil%3Dnil%2Cenvironment_url%3AString%3D%22%22%2Cauto_inactive%3ABool%3Dtrue%2C%2A%2Aoptions%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Create a deployment status for a Deployment</p>
+<p>:param repo [String]: The repository to create a deployment status for in org/repo format (required)
+:param deployment_id [Integer]: The deployment id (required)
+:param state: can be one of the following: error, failure, inactive, in_progress, queued, pending, success
+:param options [String]: :target_url The target URL to associate with this status. Default: &quot;&quot;
+:param options [String]: :description A short description of the status. Maximum length of 140 characters. Default: &quot;&quot;
+:return: A deployment status</p>
+<p><strong>See Also:</strong></p>
+<ul>
+<li><a href="https://developer.github.com/v3/repos/deployments/#create-a-deployment-status">https://developer.github.com/v3/repos/deployments/#create-a-deployment-status</a></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.create_deployment_status(<span class="s">&quot;monalisa/app&quot;</span>, <span class="n">1234567890</span>, <span class="s">&quot;success&quot;</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L176" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete_deployment(repo:String,deployment_id:Int64,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>delete_deployment</strong>(repo : String, deployment_id : Int64, **options)
+
+        <a class="method-permalink" href="#delete_deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Delete a Deployment</p>
+<p>If the repository only has one deployment, you can delete the deployment regardless of its status. If the repository has more than one deployment, you can only delete inactive deployments. This ensures that repositories with multiple deployments will always have an active deployment.</p>
+<p>To set a deployment as inactive, you must:</p>
+<p>Create a new deployment that is active so that the system has a record of the current state, then delete the previously active deployment.
+Mark the active deployment as inactive by adding any non-successful deployment status.</p>
+<p><strong>See Also:</strong></p>
+<ul>
+<li><a href="https://developer.github.com/v3/repos/deployments/#delete-a-deployment">https://developer.github.com/v3/repos/deployments/#delete-a-deployment</a>
+<strong>Examples:</strong></li>
+</ul>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.delete_deployment(<span class="s">&quot;monalisa/app&quot;</span>, <span class="n">123456</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L118" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="deployment(repo:String,deployment_id:Int64,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>deployment</strong>(repo : String, deployment_id : Int64, **options)
+
+        <a class="method-permalink" href="#deployment%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -2039,17 +2175,52 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/83b706b72b5637fb83171e6ae9f33cd9c38c5f5a/src/octokit/client/deployments.cr#L26" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L30" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="deployments(repo,**options)-instance-method">
+    <div class="entry-detail" id="deployment_statuses(repo:String,deployment_id:Int64,**options):Paginator(Octokit::Models::DeploymentStatus)-instance-method">
       <div class="signature">
         
-        def <strong>deployments</strong>(repo, **options)
+        def <strong>deployment_statuses</strong>(repo : String, deployment_id : Int64, **options) : <a href="../../Octokit/Connection/Paginator.html">Paginator</a>(<a href="../../Octokit/Models/DeploymentStatus.html">Octokit::Models::DeploymentStatus</a>)
 
-        <a class="method-permalink" href="#deployments%28repo%2C%2A%2Aoptions%29-instance-method">#</a>
+        <a class="method-permalink" href="#deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List all statuses for a Deployment</p>
+<p><strong>See Also:</strong></p>
+<ul>
+<li><a href="https://developer.github.com/v3/repos/deployments/#list-deployment-statuses">https://developer.github.com/v3/repos/deployments/#list-deployment-statuses</a></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<pre><code class="language-crystal"><span class="t">Octokit</span>.deployment_statuses(<span class="s">&quot;monalisa/app&quot;</span>, <span class="n">1234567890</span>)</code></pre>
+<p>You should use a paginated octokit instance to fetch all statuses:</p>
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Octokit</span>.client
+client.auto_paginate <span class="o">=</span> <span class="n">true</span>
+client.per_page <span class="o">=</span> <span class="n">100</span>
+
+data <span class="o">=</span> client.deployment_statuses(<span class="s">&quot;monalisa/app&quot;</span>, <span class="n">1234567890</span>)
+puts data.records.to_pretty_json</code></pre>
+<p>Returns an array of deployment statuses</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="deployments(repo:String,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>deployments</strong>(repo : String, **options)
+
+        <a class="method-permalink" href="#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#</a>
       </div>
       
         <div class="doc">
@@ -2062,12 +2233,55 @@
 <p><strong>Examples:</strong>
 List deployments for a repository</p>
 <pre><code class="language-crystal"><span class="t">Octokit</span>.deployments(<span class="s">&quot;monalisa/app&quot;</span>)</code></pre>
+<p>An alias method exists for <code><a href="../../Octokit/Client/Deployments.html#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#deployments</a></code> called <code><a href="../../Octokit/Client/Deployments.html#list_deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#list_deployments</a></code> which can be used interchangeably</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/GrantBirki/octokit.cr/blob/83b706b72b5637fb83171e6ae9f33cd9c38c5f5a/src/octokit/client/deployments.cr#L41" target="_blank">View source</a>]
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="list_deployment_statuses(repo:String,deployment_id:Int64,**options):Paginator(Octokit::Models::DeploymentStatus)-instance-method">
+      <div class="signature">
+        
+        def <strong>list_deployment_statuses</strong>(repo : String, deployment_id : Int64, **options) : <a href="../../Octokit/Connection/Paginator.html">Paginator</a>(<a href="../../Octokit/Models/DeploymentStatus.html">Octokit::Models::DeploymentStatus</a>)
+
+        <a class="method-permalink" href="#list_deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>alias for <code><a href="../../Octokit/Client/Deployments.html#deployment_statuses%28repo%3AString%2Cdeployment_id%3AInt64%2C%2A%2Aoptions%29%3APaginator%28Octokit%3A%3AModels%3A%3ADeploymentStatus%29-instance-method">#deployment_statuses</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L155" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="list_deployments(repo:String,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>list_deployments</strong>(repo : String, **options)
+
+        <a class="method-permalink" href="#list_deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Alias for <code><a href="../../Octokit/Client/Deployments.html#deployments%28repo%3AString%2C%2A%2Aoptions%29-instance-method">#deployments</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/GrantBirki/octokit.cr/blob/45f814c883822ce95b43142e8c59d2cb2bed1b42/src/octokit/client/deployments.cr#L52" target="_blank">View source</a>]
         
       </div>
     </div>
