@@ -1,4 +1,5 @@
 require "../models/repos"
+require "../models/repo_deployments"
 
 module Octokit
   class Client
@@ -83,6 +84,38 @@ module Octokit
       # ```
       def delete_deployment(repo : String, deployment_id : Int32, **options)
         delete("#{Repository.path(repo)}/deployments/#{deployment_id}", options)
+      end
+
+      # List all statuses for a Deployment
+      #
+      # **See Also:**
+      # - [https://developer.github.com/v3/repos/deployments/#list-deployment-statuses](https://developer.github.com/v3/repos/deployments/#list-deployment-statuses)
+      #
+      # **Examples:**
+      #
+      # ```
+      # Octokit.deployment_statuses("https://api.github.com/repos/monalisa/app/deployments/123456")
+      # ```
+      #
+      # You should use a paginated octokit instance to fetch all statuses:
+      #
+      # ```
+      # client = Octokit.client
+      # client.auto_paginate = true
+      # client.per_page = 100
+      #
+      # data = client.deployment_statuses("https://api.github.com/repos/<org>/<repo>/deployments/<deployment_id>")
+      # puts data.records.to_pretty_json
+      # ```
+      #
+      # Returns an array of deployment statuses
+      def deployment_statuses(deployment_url : String, **options) : Paginator(Octokit::Models::DeploymentStatus)
+        paginate(
+          Octokit::Models::DeploymentStatus,
+          deployment_url + "/statuses",
+          start_page: options[:page]?,
+          per_page: options[:per_page]?
+        )
       end
     end
   end
